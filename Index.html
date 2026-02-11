@@ -50,6 +50,42 @@
         body {
             min-height: max(884px, 100dvh);
         }
+
+        /* WhatsApp Button Fixed Position */
+        .wa-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: linear-gradient(90deg, #25D366 0%, #20BA58 100%);
+            color: white;
+            border-radius: 9999px;
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            font-weight: 700;
+            font-size: 0.875rem;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            z-index: 40;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .wa-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .wa-button {
+                padding: 0.75rem 1rem;
+                font-size: 0.75rem;
+                bottom: 1rem;
+                right: 1rem;
+            }
+        }
     </style>
 <style>
     body {
@@ -186,4 +222,10 @@
 </footer>
 </main>
 
+<!-- WhatsApp Fixed Button -->
+<a href="https://api.whatsapp.com/send?phone=15551598512&text=halo%20apa%20yang%20bisa%20jo%20consult%20bantu%20untuk%20karir%20online%20konsultan%20saya%3F" class="wa-button" target="_blank" rel="noopener noreferrer">
+  <span>Konsultasi via WA</span>
+</a>
+
 </body></html>
+
