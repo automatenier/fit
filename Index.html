@@ -1,156 +1,190 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Corong Konsultasi Fitness Indonesia</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#00AEEF",
-                        secondary: "#685BA5",
-                        instagram: "#DD2A7B", // Added the pink color from your image
-                        "background-light": "#FFFFFF",
-                        "card-light": "#F3F4F6",
-                    },
-                    fontFamily: {
-                        display: ["Inter", "sans-serif"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "12px",
-                    },
-                },
-            },
-        };
-    </script>
-    <style type="text/tailwindcss">
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #FFFFFF;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jo Consult | 3 Klien Online Coaching dalam 14 Hari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .btn-pulse { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+            100% { transform: scale(1); }
         }
-        .text-instagram { color: #DD2A7B; } /* Custom class for the Instagram pink */
-        
-        .vsl-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
-        .vsl-container iframe, .vsl-container div {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 48;
-        }
-        body {
-            min-height: max(884px, 100dvh);
-        }
-
-        .wa-button {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background: linear-gradient(90deg, #25D366 0%, #20BA58 100%);
-            color: white;
-            border-radius: 9999px;
-            padding: 1rem 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            font-weight: 700;
-            font-size: 0.875rem;
-            text-decoration: none;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
-            z-index: 40;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .wa-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.4);
-        }
-
-        @media (max-width: 768px) {
-            .wa-button {
-                padding: 0.75rem 1rem;
-                font-size: 0.75rem;
-                bottom: 1rem;
-                right: 1rem;
-            }
+        wistia-player[media-id='9c05czsx0i']:not(:defined) { 
+            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/9c05czsx0i/swatch'); 
+            display: block; 
+            filter: blur(5px); 
+            padding-top:56.25%; 
         }
     </style>
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script src="https://fast.wistia.com/embed/9c05czsx0i.js" async type="module"></script>
 </head>
-<body class="bg-white text-gray-900 selection:bg-primary selection:text-white">
+<body class="bg-white text-gray-900 leading-tight">
 
-<header class="py-8 md:py-12 flex flex-col items-center justify-center px-6">
-    <p class="text-primary font-semibold tracking-wide text-xs md:text-sm mt-4 uppercase text-center">UNTUK FITNESS COACH &amp; KONSULTAN</p>
-</header>
-
-<main class="max-w-2xl md:max-w-4xl lg:max-w-6xl mx-auto px-5 md:px-8 lg:px-12 pb-20">
-    <section class="text-center space-y-4 mb-8 md:mb-12">
-        <h1 class="text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight tracking-tight text-gray-900 px-2">
-            Cara Mendapatkan 3 Klien Online Coaching Pertama Anda dalam 14 Hari Di <span class="text-instagram">Instagram</span> dengan Sistem DM & Konten <span class="text-primary">Terima Beres.</span>
-        </h1>
-        
-        <div class="space-y-2">
-            <p class="text-gray-800 text-base md:text-lg font-bold">
-                0 Skill Teknis Cocok untuk Generasi Millenials
+    <header class="pt-16 pb-12 px-4 text-center border-b-4 border-black">
+        <div class="max-w-4xl mx-auto">
+            <p class="font-black text-blue-600 tracking-tighter uppercase mb-4 text-lg">UNTUK FITNESS COACH & KONSULTAN</p>
+            <h1 class="text-3xl md:text-5xl font-black mb-6 leading-tight tracking-tight text-black text-center">
+                Cara Mendapatkan 3 Klien Online Coaching Pertama Anda dalam 14 Hari Di Instagram
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-medium text-gray-700 leading-relaxed">
+                dengan Sistem DM & Konten <span class="bg-yellow-300 px-2 font-bold italic text-black">Terima Beres.</span> Transisi dari Jualan “Ilmu” Ke “Implementasi & Kedekatan” Dengan 0 Skill Teknis.
             </p>
-            <p class="text-slate-600 text-sm md:text-base italic">
-                Video ini menjelaskan bagaimana bisa konsisten capai 20jt/ bulan dengan sistem yang simple
-            </p>
-        </div>
-    </section>
-
-    <div class="relative p-1 bg-gradient-to-b from-primary/40 to-primary/10 rounded-2xl shadow-[0_0_25px_rgba(0,174,239,0.1)] mb-10 md:mb-16">
-        <div class="bg-white rounded-[14px] overflow-hidden">
-            <div class="bg-primary/10 border-b border-primary/20 py-4 md:py-5 text-center">
-                <span class="text-sm md:text-lg font-extrabold uppercase tracking-widest text-primary flex items-center justify-center gap-2 bg-primary/10 rounded-lg py-2 px-4 inline-flex mx-auto">
-                    <span class="material-symbols-outlined text-lg">play_circle</span>
-                    LANGKAH 1: TONTON VIDEONYA
-                </span>
-            </div>
-            <section class="vsl-container">
-                <script src="https://fast.wistia.com/player.js" async></script>
-                <script src="https://fast.wistia.com/embed/9c05czsx0i.js" async type="module"></script>
+            
+            <div class="mb-10 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden">
                 <wistia-player media-id="9c05czsx0i" aspect="1.7777777777777777"></wistia-player>
-            </section>
-        </div>
-    </div>
+            </div>
 
-    <section class="mt-10 md:mt-16 space-y-6">
-        <div class="text-center mb-2">
-            <span class="text-sm md:text-lg font-extrabold uppercase tracking-widest text-primary bg-primary/10 rounded-lg py-2 px-4 inline-block">LANGKAH 2: AMBIL TINDAKAN</span>
+            <a href="https://calendar.app.google/Qfwg2mdSqASSx1Q56" target="_blank" class="inline-block btn-pulse bg-blue-600 text-white text-2xl md:text-3xl font-black py-6 px-12 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[-2px] transition-all uppercase text-center">
+                Buat Jadwal Panggilan
+            </a>
+            <p class="mt-6 font-bold text-xl text-red-600 mb-10">Hanya tersisa 23 spot left</p>
+
+            <div class="border-4 border-black p-2 bg-gray-50 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] mb-10">
+                <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2vlbsofw7qAj__fYzA8eCA4aD0IXy7foGQykejmUtxFxV-pM7ZQYko0cq84o2NcWk17pVsRzea?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+            </div>
         </div>
-        <div class="w-full">
-            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2vlbsofw7qAj__fYzA8eCA4aD0IXy7foGQykejmUtxFxV-pM7ZQYko0cq84o2NcWk17pVsRzea?gv=true" style="border: 0" width="100%" height="600" class="md:h-[700px] lg:h-[800px]" frameborder="0"></iframe>
+    </header>
+
+    <section class="py-20 px-4 bg-gray-50 border-b-4 border-black font-poppins">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-black mb-16 text-center leading-tight">Apa yang anda Dapatkan di 14-Hari Panduan (Selama Sesi)</h2>
+            
+            <div class="grid gap-8 text-left">
+                <div class="flex items-start gap-6 p-8 border-4 border-black bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <span class="text-4xl">📩</span>
+                    <div>
+                        <h3 class="font-black text-2xl mb-2 italic uppercase leading-none">DM Skrip "Anti-Ghosting dan hard selling"</h3>
+                        <p class="text-xl font-medium">Membeli karena merasa terbantu, bukan karena merasa dijual.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-6 p-8 border-4 border-black bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <span class="text-4xl">🎬</span>
+                    <div>
+                        <h3 class="font-black text-2xl mb-2 italic uppercase leading-none">8 Template Reels & Stories yang Mengundang Pembeli Yang Tepat</h3>
+                        <p class="text-xl font-medium">Siklus Story dan Reels 14 hari yang mengubah Follower menjadi buyer.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-6 p-8 border-4 border-black bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <span class="text-4xl">💎</span>
+                    <div>
+                        <h3 class="font-black text-2xl mb-2 italic uppercase leading-none">Pembuatan Penawaran Premium "Anti Kompetitor"</h3>
+                        <p class="text-xl font-medium">Panduan menyusun penawaran dengan harga premium tanpa perang harga.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-6 p-8 border-4 border-black bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <span class="text-4xl">🌐</span>
+                    <div>
+                        <h3 class="font-black text-2xl mb-2 italic uppercase leading-none">Video Penawaran Via Website (VSL)</h3>
+                        <p class="text-xl font-medium">Website VSL berkonversi tinggi untuk membangun koneksi emosional.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-6 p-8 border-4 border-black bg-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <span class="text-4xl">📊</span>
+                    <div>
+                        <h3 class="font-black text-2xl mb-2 italic uppercase leading-none">Monitor Semua di Telegram & Dashboard Aktif</h3>
+                        <p class="text-xl font-medium">Pantau setiap pergerakan prospek agar tidak ada penjualan yang terlewat.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer class="mt-32 md:mt-40 text-center space-y-6">
-        <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6 text-[10px] md:text-xs text-slate-600 uppercase tracking-widest font-semibold">
-            <a class="hover:text-instagram transition-colors flex items-center gap-2" href="https://www.instagram.com/jordan_engo/" target="_blank" rel="noopener">
-                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.8.07 1.2.07 1.9.31 2.4.53.6.26 1 .57 1.44 1.01.44.44.75.84 1.01 1.44.22.5.46 1.2.53 2.4.07 1.2.07 1.6.07 4.8s0 3.6-.07 4.8c-.07 1.2-.31 1.9-.53 2.4-.26.6-.57 1-1.01 1.44-.44.44-.84.75-1.44 1.01-.5.22-1.2.46-2.4.53-1.2.07-1.6.07-4.8.07s-3.6 0-4.8-.07c-1.2-.07-1.9-.31-2.4-.53-.6-.26-1-.57-1.44-1.01-.44-.44-.75-.84-1.01-1.44-.22-.5-.46-1.2-.53-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.8c.07-1.2.31-1.9.53-2.4.26-.6.57-1 1.01-1.44.44-.44.84-.75 1.44-1.01.5-.22 1.2-.46 2.4-.53C8.4 2.2 8.8 2.2 12 2.2zM12 7.8a4.2 4.2 0 100 8.4 4.2 4.2 0 000-8.4zM17.6 6a1 1 0 11-2 0 1 1 0 012 0z"/></svg>
-                <span class="hidden md:inline text-instagram">Instagram</span>
-            </a>
-            </div>
-    </footer>
-</main>
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <p class="text-2xl md:text-4xl font-black mb-12 text-black leading-tight uppercase text-left">
+                Kepada Para Online Coach atau Konsultan
+            </p>
+            <p class="text-xl md:text-2xl font-medium mb-12 text-left text-gray-800">
+                Jika Anda mencari cara cepat untuk mendapatkan klien pertama tanpa harus mempelajari tools digital marketing, baca ini.
+            </p>
+            <p class="text-xl md:text-2xl font-medium mb-2 text-left">Konsultan ada di mana-mana sekarang.</p>
+            <p class="text-xl md:text-2xl font-medium mb-2 text-left">Kita berada di <span class="underline decoration-4 decoration-blue-500 text-black">krisis kepercayaan.</span></p>
+            <p class="text-xl md:text-2xl font-medium mb-12 leading-relaxed text-left text-gray-800">AI memberikan edukasi gratis dan cepat untuk semua orang.</p>
+            <p class="text-xl md:text-2xl font-medium mb-12 italic text-left">Jika rencana anda “Menjual Digital Produk” anda sudah ketinggalan jaman.</p>
 
-<a href="https://api.whatsapp.com/send?phone=15551598512&text=halo" class="wa-button" target="_blank" rel="noopener noreferrer">
-    <span>Konsultasi via WA</span>
-</a>
+            <div class="mb-4 text-xl md:text-3xl leading-relaxed text-left">
+                "Satu-satunya hal yang tetap menciptakan bukti nyata, uang, dan kepercayaan diri di awal adalah <span class="bg-yellow-300 px-2 font-black italic text-black">Tanggapan Pasar</span>"
+            </div>
+            <p class="text-xl md:text-2xl font-black mb-4 tracking-tight text-black italic text-left uppercase">
+                Isi DM. Penolakan Penawaran. Jadwal Temu. Keputusan beli.
+            </p>
+            <p class="text-xl md:text-2xl font-medium mb-12 text-left">Itulah angka yang membuktikan.</p>
+            <p class="text-xl md:text-2xl font-medium mb-2 text-left">Kebenaran yang pahit itu:</p>
+            <p class="text-xl md:text-2xl font-medium mb-2 leading-relaxed text-gray-800 text-left">Kebanyakan coach yang masih berada di angka Rp0 tidak kekurangan Sertifikat Melatih.</p> 
+            <p class="text-xl md:text-2xl font-medium mb-12 text-left text-gray-800">Mereka kurang paham interaksi di Media Sosial (DM & Konten).</p>
+
+            <p class="text-xl md:text-2xl font-medium mb-4 text-left">Sehingga mereka terjebak dalam siklus:</p>
+            <p class="text-3xl md:text-5xl font-black leading-[1.1] text-black mb-12 tracking-tighter uppercase text-left">
+                Belajar materi → Buat konten → Edit sendiri → Ganti konsep → Belajar lagi → TETAP Rp0.
+            </p>
+            <p class="text-3xl md:text-4xl font-black text-blue-600 tracking-tight text-left">Inilah fungsi Jo Consult.</p>
+        </div>
+    </section>
+
+    <section class="py-24 px-4 bg-white border-t-4 border-black text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-black mb-8 leading-tight uppercase">anda tidak experimen, anda implementasi</h2>
+            
+            <div class="mb-8 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden bg-gray-100">
+                <img src="https://drive.google.com/thumbnail?id=1Tkg06B_PkrvO0SWJGglOilfpgIvKLAOI&sz=w2000" alt="Jo Consult Infrastructure 1" class="w-full h-auto">
+            </div>
+            <div class="mb-12 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden bg-gray-100">
+                <img src="https://drive.google.com/thumbnail?id=1lrgKftsSxTuPfA8GZLlkZtAVfvKTZt_b&sz=w2000" alt="Jo Consult Infrastructure 2" class="w-full h-auto">
+            </div>
+
+            <p class="text-xl md:text-2xl font-bold mb-12 italic text-gray-700">Inilah yang kami instal langsung ke bisnis Anda:</p>
+
+            <div class="grid md:grid-cols-2 gap-6 text-left mb-16 text-black">
+                <div class="p-6 border-2 border-black font-bold text-lg bg-blue-50 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">✔️ 20 SOP yang memandu Anda setiap minggu</div>
+                <div class="p-6 border-2 border-black font-bold text-lg bg-blue-50 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">✔️ 1-Page Funnel & Sistem Booking (VSL Framework)</div>
+                <div class="p-6 border-2 border-black font-bold text-lg bg-blue-50 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">✔️ 20 Template Konten Siap Pakai</div>
+                <div class="p-6 border-2 border-black font-bold text-lg bg-blue-50 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">✔️ CRM Terintegrasi Looker Studio</div>
+            </div>
+
+            <div class="max-w-3xl mx-auto text-left mb-12 space-y-6 border-l-4 border-blue-600 pl-6 italic text-gray-800">
+                <p class="text-xl md:text-2xl font-medium leading-relaxed">Kebanyakan program hanya memberikan konsep dan menyebutnya sebagai "pelatihan."</p>
+                <p class="text-xl md:text-2xl font-medium leading-relaxed">Kami memberikan Anda Infrastruktur yang sudah jadi dan meminta Anda untuk menjalankannya.</p>
+                <p class="text-xl md:text-2xl font-bold text-black leading-relaxed text-blue-600">Dengan begitu, Anda berhenti menebak-nebak dan mulai mengumpulkan feedback pasar yang menghasilkan uang.</p>
+            </div>
+
+            <a href="https://calendar.app.google/Qfwg2mdSqASSx1Q56" target="_blank" class="inline-block bg-blue-600 text-white text-2xl md:text-4xl font-black py-8 px-16 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:bg-blue-700 transition-all uppercase tracking-tighter text-center">
+                Buat Jadwal Panggilan
+            </a>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-black text-white border-t-4 border-blue-600">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="aspect-square bg-gray-800 border-4 border-blue-600 flex items-center justify-center italic text-gray-500 shadow-[10px_10px_0px_0px_#2563eb]">
+                <p class="font-bold text-center px-4">[FOTO MATHEW JORDAN]</p>
+            </div>
+            <div>
+                <h2 class="text-blue-500 font-black text-xl uppercase mb-4 tracking-widest text-left leading-none">Siapa Saya?</h2>
+                <h3 class="text-5xl font-black mb-8 leading-tight tracking-tight text-white uppercase text-left">Saya Mathew Jordan.</h3>
+                
+                <div class="space-y-6 text-xl text-gray-300 leading-relaxed text-left">
+                    <p>Inilah yang membedakan kami dari saran generik di luar sana: Kebanyakan program hanya memberikan konsep, lalu membiarkan Anda bingung saat "implementasi".</p>
+                    <p class="text-white font-black uppercase tracking-tight text-2xl">Kami melakukan hal yang sebaliknya.</p>
+                    <p>Kami membangunkan infrastruktur akuisisi untuk Anda—mulai dari sistem CRM, website VSL, hingga tim talent kontrak—sehingga Anda berhenti menebak-nebak dan mulai menginstal.</p>
+                    <p class="bg-blue-600 text-white px-2 inline-block font-bold italic">Di dalam sistem ini, Anda tidak sedang bereksperimen. Anda sedang melakukan instalasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-white text-center border-t-4 border-black">
+        <a href="https://calendar.app.google/Qfwg2mdSqASSx1Q56" target="_blank" class="mb-12 inline-block bg-blue-600 text-white text-xl md:text-2xl font-black py-4 px-10 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] uppercase text-center transition-transform hover:scale-105">
+            Buat Jadwal Panggilan
+        </a>
+        <p class="font-black text-lg text-black">© 2026 Mathew Jordan | Jo Consult</p>
+        <p class="text-xs text-gray-500 mt-4 uppercase font-bold tracking-widest px-4">Program eksekusi - Bukan nasihat finansial. Hasil tergantung pada dedikasi masing-masing.</p>
+    </footer>
 
 </body>
 </html>
